@@ -9,4 +9,3 @@ fs.readdirSync(__dirname).forEach((routeFileName) => {
 });
 
 module.exports = routes;
-
