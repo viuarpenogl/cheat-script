@@ -30,7 +30,7 @@
 
 С роутами связана особенность, которая по-хорошему должна упрощать жизнь.
 
-Все роуты из директории [`routes`](exapmle/routes) подключаются в [`app.js`](example/app.js) единожды:
+Все роуты из директории [`routes`](exapmle/src/routes) подключаются в [`app.js`](example/app.js) единожды:
 ```js
 const routes = require(path.join(process.env.PWD, 'src', 'routes'));
 ```
@@ -40,7 +40,7 @@ app.use('/address', routes.address); // для роута address.js или addr
 ```
 Ничего в [`app.js`](example/app.js) кроме вышеуказанной строки подключать ***не будет*** нужно.
 
-Это происходит благодаря файлу [`index.js`](example/routes/index.js), его трогать и менять ***не нужно***.
+Это происходит благодаря файлу [`index.js`](example/src/routes/index.js), его трогать и менять ***не нужно***.
 
 ##  Установка и запуск
 -------------------------
